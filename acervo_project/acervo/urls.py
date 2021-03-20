@@ -9,10 +9,10 @@ app_name = 'acervo'
 
 router = routers.DefaultRouter()
 
-router.register('author', views.AuthorViewSet, basename='user-author')
-router.register('category', views.CategoryViewSet, basename='user-category')
-router.register('book', views.BookViewSet, basename='user-book')
-router.register('acervo', views.AcervoViewSet, basename='user-acervo')
+router.register('author', views.AuthorViewSet, basename='acervo')
+router.register('category', views.CategoryViewSet, basename='acervo')
+router.register('book', views.BookViewSet, basename='acervo')
+router.register('acervo', views.AcervoViewSet, basename='acervo')
 
 urlpatterns = [
     path('', include(router.urls))

@@ -1,5 +1,10 @@
 from django.contrib import admin
-from .models import Author, Category, Book, Acervo
+from .models import(
+    Author,
+    Category,
+    Book,
+    Acervo
+)
 
 
 admin.site.register(Author)

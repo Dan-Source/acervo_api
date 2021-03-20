@@ -56,7 +56,7 @@ class Acervo(models.Model):
     my_acervo = models.ManyToManyField(Book,  verbose_name='Acervo')
 
     def __str__(self):
-        return '{self.name} Acervo'
+        return '{} Acervo'.format(self.owner)
 
     class Meta:
         verbose_name = 'Acervo'
